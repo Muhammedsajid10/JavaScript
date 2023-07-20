@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="inp">
+    <button onclick="funct()">Enter</button>
+    <p id="demo"></p>
+    <script>
+        function funct() {
+            var text;
+            var day =Number(document.getElementById("inp").value) ;
+            switch (day) {
+                case 1:
+                    text = "Monday";
+                    break;
+                case 2:
+                    text = "Tuesday";
+                    break;
+                case 3:
+                    text = "Wednesday";
+                    break;
+                case 4:
+                    text = "Thursday";
+                    break;
+                case 5:
+                    text = "Friday";
+                    break;
+                case 6:
+                    text = "Saturday";
+                    break;
+                case 7:
+                    text = "Sunday";
+                    break;
+                default:
+                    text = "Invalid Number......."
+
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+
+    </script>
+</body>
+
+</html>
